@@ -1,265 +1,292 @@
-    /* Base Styles */
-    /* Here we are setting the font of all elements on the page to be Raleway & in case of any issue, the system fallbacks to sans-serif font.*/
-    
-    body {
-        font-family: "Raleway", sans-serif;
-    }
-    /* Changing the links (a - anchor elements) to orange color and also removing the links by using text-decoration to none*/
-    
-    a {
-        color: orange;
-        text-decoration: none;
-    }
-    /* Using a pseudo selector for link, so that whenever the link is hovered on, an underline is shown*/
-    
-    a:hover {
-        text-decoration: underline;
-    }
-    /*setting as block level element & adding some space on top*/
-    
-    section {
-        display: block;
-        padding-top: 75px;
-    }
-    /* centering & adding space on top*/
-    
-    .container {
-        width: 970px;
-        margin: auto;
-        padding-top: 75px;
-    }
-    /* Shared properties of h3 & h4 */
-    
-    .container h3,
-    .container h4 {
-        margin: 20px 0;
-        text-align: center;
-    }
-    
-    .container h3 {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .container h4 {
-        font-size: 15px;
-    }
-    /* Header */
-    
-    .header-container,
-    .footer-container {
-        display: flex;
-        flex-direction: row;
-        width: 970px;
-        margin: auto;
-    }
-    
-    header {
-        width: 100%;
-        background-color: #222;
-        height: 75px;
-        padding: 20px;
-        position: fixed;
-        z-index: 300;
-    }
-    
-    header #company-logo {
-        flex: 2;
-    }
-    
-    header h1 {
-        font-size: 30px;
-        font-weight: thin;
-        font-family: "Rock Salt", cursive;
-        color: #ddd;
-        line-height: 35px;
-        text-shadow: 1px 1px 3px #333;
-    }
-    
-    header .menu-wrapper {
-        flex: 2;
-        line-height: 35px;
-        text-align: right;
-    }
-    
-    header nav ul li {
-        display: inline-block;
-        margin-right: 20px;
-    }
-    /* Hero Image*/
-    
-    #hero-image {
-        height: 100vh;
-        background: #000 url("../images/Hero-01-01.jpg") no-repeat fixed bottom;
-        background-size: cover;
-        position: relative;
-    }
-    
-    .overlay {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0, 0, 0, 0.50);
-    }
-    
-    .tag-line1 {
-        position: absolute;
-        bottom: 85%;
-        width: 100%;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 100;
-        color: #ccc;
-        text-transform: capitalize;
-        opacity: 0.5;
-        font-family: 'Kaushan Script', cursive;
-    }
-    
-    .tag-line2 {
-        position: absolute;
-        top: 85%;
-        width: 100%;
-        text-align: center;
-        font-size: 50px;
-        font-weight: 100;
-        /* color: #8A1538; */
-        color: #ccc;
-        text-transform: capitalize;
-        opacity: 0.5;
-        font-family: "Amiri", serif;
-    }
-    /* Top Button */
-    
-    #topButton {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: red;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-    }
-    
-    #topButton:hover {
-        background-color: #555;
-    }
-    /* Our Story */
-    
-    #our-story {
-        padding: 25px 0;
-    }
-    
-    #our-story p {
-        text-align: justify;
-        color: #8A1538;
-    }
-    /* Gallery */
-    
-    #gallery {
-        background-color: #333;
-        color: white;
-        padding: 25px 0;
-        text-align: center;
-    }
-    
-    .gallery-row {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 10px;
-        justify-content: space-evenly;
-    }
-    
-    .gallery-item {
-        flex: 1;
-        flex-basis: 33%;
-    }
-    
-    .gallery-description {
-        margin-bottom: 20px;
-        text-align: left;
-        font-weight: bolder;
-        font-size: 15px;
-    }
-    
-    #contact {
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }
-    
-    #contact fieldset {
-        width: 80%;
-        margin: auto;
-        background-color: #eee;
-        padding: 20px;
-        box-shadow: 0 0 4px #ccc;
-    }
-    
-    #contact p {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    #contact input,
-    #contact textarea {
-        margin-bottom: 20px;
-        padding: 5px;
-        border: 1px #ccc solid;
-        border-radius: 5px;
-    }
-    
-    #contact input {
-        height: 40px;
-    }
-    
-    #contact textarea {
-        height: 200px;
-    }
-    
-    #contact button {
-        width: 100%;
-        height: 40px;
-        border: 1px #ccc solid;
-    }
-    
-    #contact button:hover {
-        background-color: #333;
-        color: #fff;
-        cursor: pointer;
-    }
-    /* Footer Section*/
-    
-    footer {
-        background-color: #222;
-        position: relative;
-        bottom: 0;
-        height: 100px;
-    }
-    
-    footer #copyright {
-        color: #fff;
-        line-height: 100px;
-        text-align: center;
-        width: 100%;
-        margin: auto;
-    }
-    /*Addins*/
-    
-    footer .address {
-        color: #fff;
-        text-align: left;
-        width: 25%;
-        margin: auto;
-    }
-    
-    .gallery-item img {
-        padding: 5px;
-        height: 200px;
-        width: 100%;
-        background-color: none;
-    }
+/* Base Styles */
+
+
+/* Here we are setting the font of all elements on the page to be Raleway & in case of any issue, the system fallbacks to sans-serif font.*/
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* Changing the links (a - anchor elements) to orange color and also removing the links by using text-decoration to none*/
+
+a {
+    color: orange !important;
+    text-decoration: none;
+}
+
+
+/* Using a pseudo selector for link, so that whenever the link is hovered on, an underline is shown*/
+
+a:hover {
+    text-decoration: underline;
+    color: #8A1538 !important;
+}
+
+
+/*setting as block level element & adding some space on top*/
+
+section {
+    display: block;
+    padding-top: 75px;
+}
+
+
+/* centering & adding space on top*/
+
+.container {
+    width: 970px;
+    margin: auto;
+    padding-top: 75px;
+}
+
+
+/* Shared properties of h3 & h4 */
+
+.container h3,
+.container h4 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container h4 {
+    font-size: 15px;
+}
+
+
+/* Header */
+
+
+/* .header-container, */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 970px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #222;
+    height: 5rem;
+    padding: 20px;
+    position: fixed;
+    /* z-index: 300; */
+}
+
+header #company-logo {
+    flex: 2;
+}
+
+header h1 {
+    color: #ddd;
+    text-shadow: 1px 1px 3px #333;
+}
+
+
+/* header .menu-wrapper {
+    flex: 2;
+    line-height: 35px;
+    text-align: right;
+} */
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/* Hero Image*/
+
+#hero-image {
+    background: #000 url("../images/Hero-01-01.jpg") no-repeat fixed bottom;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.50);
+}
+
+.tag-line1 {
+    position: absolute;
+    bottom: 85%;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    color: #ccc;
+    text-transform: capitalize;
+    opacity: 0.5;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.tag-line2 {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    /* color: #8A1538; */
+    color: #ccc;
+    text-transform: capitalize;
+    opacity: 0.5;
+    font-family: "Amiri", serif;
+}
+
+
+/* Top Button */
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    /* z-index: 99; */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#topButton:hover {
+    background-color: #555;
+}
+
+
+/* Our Story */
+
+#our-story {
+    padding: 25px 0;
+}
+
+.our-story-content {
+    text-align: justify;
+    color: #8A1538;
+    padding: 20px 20px;
+}
+
+
+/* Gallery */
+
+#gallery {
+    background-color: #333;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+.gallery-item {
+    flex: 1;
+    flex-basis: 33%;
+}
+
+.gallery-description {
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#contact {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#contact fieldset {
+    width: 80%;
+    margin: auto;
+    background-color: #eee;
+    padding: 20px;
+    box-shadow: 0 0 4px #ccc;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+}
+
+#contact input {
+    height: 40px;
+}
+
+#contact textarea {
+    height: 200px;
+}
+
+#contact button {
+    width: 100%;
+    height: 40px;
+    border: 1px #ccc solid;
+}
+
+#contact button:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Footer Section*/
+
+footer {
+    background-color: #222;
+    position: relative;
+    bottom: 0;
+    height: 100px;
+}
+
+footer #copyright {
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*Addins*/
+
+footer .address {
+    color: #fff;
+    text-align: left;
+    width: 25%;
+    margin: auto;
+}
+
+.gallery-item img {
+    padding: 5px;
+    height: 200px;
+    width: 100%;
+    background-color: none;
+}
